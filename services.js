@@ -1,7 +1,7 @@
 angular.module('myApp')
   .service('dataService', ['$http', function($http) {
 
-    var randomnumber = Math.floor(Math.random() * 200) + 1;
+    var randomnumber = Math.floor(Math.random() * 50) + 1;
     console.log(randomnumber);
 
     // URL API yang ingin diambil

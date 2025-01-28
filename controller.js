@@ -11,4 +11,15 @@ angular.module('myApp')
       console.log(data);
     });
 
-  }]);
+  }])
+  .controller('MenuController', function() {
+    var vm = this;
+
+    // State untuk menyimpan apakah menu terbuka atau tidak
+    vm.isMenuOpen = false;
+
+    // Fungsi untuk toggle menu
+    vm.toggleMenu = function() {
+      vm.isMenuOpen = !vm.isMenuOpen;
+    };
+  });
